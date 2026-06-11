@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/meechy.css">
+    <title>productDetails</title>
+
+    <!-- ============ FONTS =========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Audiowide&family=Outfit:wght@100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- ==========ION ICONS ========== -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <section class="general-wrapper">
+
+        <!-- =========== NAV ========== -->
+        <nav>
+            <div class="nav-items">
+                <div class="nav-title">
+                    <a href="./meechy.html">
+                        <p>Meechy</p>
+                    </a>
+                </div>
+                <div class="nav-about">
+                    <ul>
+                        <li><a href="./productDetails.html">Shop</a></li>
+                        <li><a href="/pages/wishlist.html">Wishlist</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-search">
+                <div class="search-bar">
+                    <div class="search-icon">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </div>
+                    <div class="search-input">
+                        <input type="text" placeholder="Search collections...">
+                    </div>
+                </div>
+                <div class="profile">
+                    <ion-icon name="person-outline"></ion-icon>
+                </div>
+                <div class="cart-icon">
+                    <ion-icon name="bag-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="menu" id="menu">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+        </nav>
+        <div class="buger-menu" id="menuItems">
+            <div class="search-bar">
+                <div class="search-icon">
+                    <ion-icon name="search-outline"></ion-icon>
+                </div>
+                <div class="search-input">
+                    <input type="text" placeholder="Search collections...">
+                </div>
+            </div>
+            <ul>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Wishlist</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- ============= SHOP =========== -->
+        <div class="shop-container">
+            <div class="shop-wrapper">
+                <div class="outfit-display">
+                    <div class="outfit-angle-wrapper">
+                        <div class="view" id="view">
+                            <!-- <img src="../assets/imgs/ddf.jpg" alt=""> -->
+                        </div>
+                        <div class="overview" id="overview">
+                            <img src="../assets/imgs/df.webp" id="previewImg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="outfit-details">
+                    <div class="heading">
+                        <div>
+                            <span class="review">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-half"></ion-icon>
+                                <span>(124 Reviews)</span>
+                            </span>
+                            <span class="description">
+                                <p>Urban Noir Oversized Blazer</p>
+                            </span>
+                            <span class="price">
+                                <p>$749.00</p>
+                            </span>
+                        </div>
+                        <div>
+                            <div class="write-up">
+                                <p>A contemporary oversized blazer crafted for a bold yet refined look. Featuring a
+                                    relaxed
+                                    silhouette, structured tailoring, and a minimalist design, it offers the perfect
+                                    balance
+                                    of
+                                    comfort and sophistication. An essential wardrobe piece that pairs effortlessly with
+                                    both
+                                    casual and smart ensembles.</p>
+                            </div>
+                        </div>
+                        <div class="guide">
+                            <div class="color-pallette">
+                                <p>COLOR</p>
+                                <div class="pallette">
+                                    <div class="clr"></div>
+                                    <div class="clr"></div>
+                                    <div class="clr"></div>
+                                </div>
+                            </div>
+                            <div class="size">
+                                <p>SELECT SIZE</p>
+                                <div class="size-options">
+                                    <div class="your-size">XS</div>
+                                    <div class="your-size">S</div>
+                                    <div class="your-size">M</div>
+                                    <div class="your-size">L</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="add-to-cart">
+                                <button>Add to Cart</button>
+                                <button class="wishlist"><ion-icon name="heart-outline"></ion-icon> Add to
+                                    Wishlist</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============= You May Also Like =========== -->
+            <div class="trending-now">
+                <div class="trending-header">
+                    <div class="title">
+                        <h1>You May Also Like</h1>
+                    </div>
+                </div>
+                <div class="wears">
+                    <div class="trending-wears">
+                        <div class="outfits">
+                            <div class="imgs">
+                                <img src="../assets/imgs/eee.jpg" alt="">
+                            </div>
+                            <div class="outfit-info">
+                                <p>Tech Hoodie</p>
+                                <span class="price">$200</span>
+                            </div>
+                        </div>
+                        <div class="outfits">
+                            <div class="imgs">
+                                <img src="../assets/imgs/www.jpg" alt="">
+                            </div>
+                            <div class="outfit-info">
+                                <p>Tech Hoodie</p>
+                                <span class="price">$200</span>
+                            </div>
+                        </div>
+                        <div class="outfits">
+                            <div class="imgs">
+                                <img src="../assets/imgs/ttt.jpg" alt="">
+                            </div>
+                            <div class="outfit-info">
+                                <p>Tech Hoodie</p>
+                                <span class="price">$200</span>
+                            </div>
+                        </div>
+                        <div class="outfits">
+                            <div class="imgs">
+                                <img src="../assets/imgs/qqq.jpg" alt="">
+                            </div>
+                            <div class="outfit-info">
+                                <p>Tech Hoodie</p>
+                                <span class="price">$200</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ================== Customer Reviews ================= -->
+            <div class="reviews-wrapper">
+                <div class="customers-rating">
+                    <div class="title">
+                        <p>Customer Reviews</p>
+                    </div>
+                    <div class="rating">
+                        <div>
+                            <h3>4.8</h3>
+                        </div>
+                        <div class="stars">
+                            <div class="">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                            </div>
+                            <div class="review-no">
+                                <p>Based on 124 reviews</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-btn">
+                        <button>Write a Review</button>
+                    </div>
+                </div>
+                <div class="customers-review">
+                    <div class="review-date">
+                        <div class="review-wrapper">
+                            <div class="review-header">
+                                <div class="stars">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+
+                                </div>
+                                <div class="review-title">
+                                    <p>Execptional Quality</p>
+                                </div>
+                            </div>
+                            <div class="r-date">
+                                <p>2 weeks ago</p>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <p>Urban Noir Oversized Blazer is perfectly structured. It feels much more expensive than it
+                                is. The charcoal color is deep and sophisticated. </p>
+                        </div>
+                        <div class="review-profile">
+                            <div class="reviewer-img">
+                                <img src="../assets/imgs/ddfg.jpg" alt="">
+                            </div>
+                            <div class="reviewers-name">
+                                <p><span>-</span>Jasper M.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-date">
+                        <div class="review-wrapper">
+                            <div class="review-header">
+                                <div class="stars">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+
+                                </div>
+                                <div class="review-title">
+                                    <p>A New Wardrobe Staple</p>
+                                </div>
+                            </div>
+                            <div class="r-date">
+                                <p>1 month ago</p>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <p>Urban Noir Oversized Blazer is perfectly structured. It feels much more expensive than it
+                                is. The charcoal color is deep and sophisticated. </p>
+                        </div>
+                        <div class="review-profile">
+                            <div class="reviewer-img">
+                                <img src="../assets/imgs/ddfg.webp" alt="">
+                            </div>
+                            <div class="reviewers-name">
+                                <p><span>-</span>Emily R.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-wrapper">
+                <div class="brand">
+                    <div class="brand-title">
+                        <p>Meechy</p>
+                    </div>
+                    <div class="brand-content">
+                        <p>Elevated garments for the modern landscape. Technical percision meets avant-garde luxury.
+                        </p>
+                    </div>
+                    <div class="brand-icons">
+                        <ion-icon name="camera-outline"></ion-icon>
+                        <ion-icon name="globe-outline"></ion-icon>
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="collections">
+                    <div class="support">
+                        <div class="title">
+                            <p>SHOP</p>
+                        </div>
+                        <div class="status">
+                            <a href="">Shop All</a>
+                            <a href="">New Arrivals</a>
+                            <a href="">Limited Edition</a>
+                        </div>
+                    </div>
+                    <div class="support">
+                        <div class="title">
+                            <p>HELP</p>
+                        </div>
+                        <div class="status">
+                            <a href="">Return & Exchange</a>
+                            <a href="">Shipping Policy</a>
+                            <a href="">Sustainability</a>
+                        </div>
+                    </div>
+                    <div class="support">
+                        <div class="title">
+                            <p>NEWSLETTER</p>
+                        </div>
+                        <div class="status">
+                            <a href="">Subscribe for early access to collections</a>
+                            <div class="btns">
+                                <input type="text" placeholder="Email Address">
+                                <button submi><ion-icon name="arrow-forward"></ion-icon></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rights">
+                <div class="product-year">
+                    <p>
+                        <span>&copy</span> 2026 Meechy premium Commerce. All rights reserved.
+                    </p>
+                </div>
+                <div class="product-icons">
+                    <ion-icon name="cash-outline"></ion-icon>
+                    <ion-icon name="card-outline"></ion-icon>
+                    <ion-icon name="logo-paypal"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+<script src="../meechy.js"></script>
+
+</html>

@@ -30,8 +30,8 @@
                 <div class="nav-about">
                     <ul>
                         <li><a href="./productDetails.html">Shop</a></li>
-                        <li><a href="">Wishlist</a></li>
-                        <li><a href="">About</a></li>
+                        <li><a href="/wishlist.js">Wishlist</a></li>
+                        <li><a href="/pages/about.html">About</a></li>
                         <li><a href="">Contact</a></li>
                     </ul>
                 </div>
@@ -66,9 +66,9 @@
                 </div>
             </div>
             <ul>
-                <li><a href="">Shop</a></li>
-                <li><a href="">Wishlist</a></li>
-                <li><a href="">About</a></li>
+                <li><a href="./productDetails.html">Shop</a></li>
+                <li><a href="./wishlist.html">Wishlist</a></li>
+                <li><a href="/pages/about.html">About</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
         </div>
@@ -77,11 +77,13 @@
         <div class="wishlist">
             <div class="wishlist-container">
                 <div class="wishlist-wrapper">
-                    <div class="wishlist-title">
-                        <p>Your Wishlist</p>
-                    </div>
+                    <!-- <div class="wishlist-title"> -->
+                    <!-- </div> -->
                     <div class="wishlist-content-wrap">
                         <div class="wishlist-content">
+                            <span class="special-title">
+                                <p>Your Wishlist</p>
+                            </span>
                             <p>Create your personal collection of technical luxury. Review your saved pieces or share
                                 your
                                 vision with others.</p>
@@ -93,120 +95,8 @@
                     </div>
                 </div>
                 <div class="cart-wrap">
-                    <div class="cart">
-                        <div class="cart-items" id="cartProducts">
-                            <div class="cart-products">
-                                <img src="/assets/imgs/uuu.jpg" alt="">
-                            </div>
-                            <div class="cart-details">
-                                <div class="details">
-                                    <p>New Balance</p>
-                                    <span>Limited Edition</span>
-                                </div>
-                                <div class="price">
-                                    <p>$2500</p>
-                                </div>
-                            </div>
-                            <div class="add-to-cart-btns" id="btn">
-                                <button>ADD TO CART</button>
-                            </div>
-                            <ion-icon name="close-outline" id="removeBtn"></ion-icon>
-                        </div>
+                    <div class="wishlistWrapper" id="cartProducts">
 
-                        <div class="cart-items" id="cartProducts">
-                            <div class="cart-products">
-                                <img src="/assets/imgs/vvv.jpg" alt="">
-                            </div>
-                            <div class="cart-details">
-                                <div class="details">
-                                    <p>New Balance</p>
-                                    <span>Limited Edition</span>
-                                </div>
-                                <div class="price">
-                                    <p>$2500</p>
-                                </div>
-                            </div>
-                            <div class="add-to-cart-btns" id="btn">
-                                <button>ADD TO CART</button>
-                            </div>
-                            <ion-icon name="close-outline" id="removeBtn"></ion-icon>
-                        </div>
-
-                        <div class="cart-items" id="cartProducts">
-                            <div class="cart-products">
-                                <img src="/assets/imgs/ddd.jpg" alt="">
-                            </div>
-                            <div class="cart-details">
-                                <div class="details">
-                                    <p>New Balance</p>
-                                    <span>Limited Edition</span>
-                                </div>
-                                <div class="price">
-                                    <p>$2500</p>
-                                </div>
-                            </div>
-                            <div class="add-to-cart-btns" id="btn">
-                                <button>ADD TO CART</button>
-                            </div>
-                            <ion-icon name="close-outline"></ion-icon>
-                        </div>
-
-                        <div class="cart-items" id="cartProducts">
-                            <div class="cart-products">
-                                <img src="/assets/imgs/ooo.jpg" alt="">
-                            </div>
-                            <div class="cart-details">
-                                <div class="details">
-                                    <p>New Balance</p>
-                                    <span>Limited Edition</span>
-                                </div>
-                                <div class="price">
-                                    <p>$2500</p>
-                                </div>
-                            </div>
-                            <div class="add-to-cart-btns" id="btn">
-                                <button>ADD TO CART</button>
-                            </div>
-                            <ion-icon name="close-outline"></ion-icon>
-                        </div>
-
-                        <div class="cart-items" id="cartProducts">
-                            <div class="cart-products">
-                                <img src="/assets/imgs/www.jpg" alt="">
-                            </div>
-                            <div class="cart-details">
-                                <div class="details">
-                                    <p>New Balance</p>
-                                    <span>Limited Edition</span>
-                                </div>
-                                <div class="price">
-                                    <p>$2500</p>
-                                </div>
-                            </div>
-                            <div class="add-to-cart-btns" id="btn">
-                                <button>ADD TO CART</button>
-                            </div>
-                            <ion-icon name="close-outline"></ion-icon>
-                        </div>
-
-                        <div class="cart-items" id="cartProducts">
-                            <div class="cart-products">
-                                <img src="/assets/imgs/ttt.jpg" alt="">
-                            </div>
-                            <div class="cart-details">
-                                <div class="details">
-                                    <p>New Balance</p>
-                                    <span>Limited Edition</span>
-                                </div>
-                                <div class="price">
-                                    <p>$2500</p>
-                                </div>
-                            </div>
-                            <div class="add-to-cart-btns" id="btn">
-                                <button>ADD TO CART</button>
-                            </div>
-                            <ion-icon name="close-outline"></ion-icon>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -234,7 +124,8 @@
                             <span>
                                 <p>Exclusive Early Access</p>
                             </span>
-                            <span class="content">Just the MEECHY circle for priority access to the seasonal drop</span>
+                            <span class="content">Just the MEECHY circle for priority access to the seasonal
+                                drop</span>
                         </div>
                         <div class="arrow">
                             <ion-icon name="arrow-forward-outline"></ion-icon>
@@ -268,7 +159,8 @@
                         <p>Meechy</p>
                     </div>
                     <div class="brand-content">
-                        <p>Elevated garments for the modern landscape. Technical percision meets avant-garde luxury.</p>
+                        <p>Elevated garments for the modern landscape. Technical percision meets avant-garde
+                            luxury.</p>
                     </div>
                     <div class="brand-icons">
                         <ion-icon name="camera-outline"></ion-icon>
@@ -324,6 +216,7 @@
         </div>
     </div>
 </body>
+<script src="/wishlist.js"></script>
 <script src="/meechy.js"></script>
 
 </html>

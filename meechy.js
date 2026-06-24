@@ -106,10 +106,19 @@ document.addEventListener("DOMContentLoaded", () => {
 let hambuger = document.getElementById("menu");
 let menuContent = document.getElementById("menuItems");
 
-hambuger.addEventListener("click", () => {
-    menuContent.classList.toggle("active")
+hambuger.addEventListener("click", (e) => {
+    e.stopPropagation();
+    menuContent.classList.toggle("active");
 });
 
+document.addEventListener("click", (e) => {
+    if (
+        !menuContent.contains(e.target) &&
+        !hambuger.contains(e.target)
+    ) {
+        menuContent.classList.remove("active");
+    }
+});
 
 // ================ Shop ===============
 let overview = document.getElementById("overview");
@@ -125,7 +134,7 @@ let outfits = [
         img: "../assets/imgs/df.webp",
     },
     {
-        id: 2,
+        id: 3,
         img: "../assets/imgs/ddfg.webp",
     }
 ];
@@ -144,8 +153,63 @@ function changeImage(img) {
 displayOutfits();
 
 // --------------- Add to Cart --------------
-let removeBtn = document.getElementById("removeBtn");
 
-removeBtn.addEventListener("click", () => {
-    document.getElementById("cartProducts").remove();
-});
+
+// let cartProducts = document.getElementById("cartProducts");
+// function wishlistProduct() {
+//     let cartItems = [
+//         {
+//             id: 1,
+//             brand: "Nike",
+//             availability: "in stock",
+//             price: "1200",
+//             img: "../assets/imgs/fg"
+//         },
+//         {
+//             id: 2,
+//             brand: "New Balance",
+//             availability: "Limited Edition",
+//             price: "1200",
+//             img: "../assets/imgs/fg"
+//         },
+//         {
+//             id: 3,
+//             brand: "Nike",
+//             availability: "in stock",
+//             price: "1200",
+//             img: "../assets/imgs/fg"
+//         },
+//         {
+//             id: 4,
+//             brand: "Nike",
+//             availability: "Out of stock",
+//             price: "1200",
+//             img: "../assets/imgs/fg"
+//         },
+//         {
+//             id: 5,
+//             brand: "Nike",
+//             availability: "in stock",
+//             price: "1200",
+//             img: "../assets/imgs/fg"
+//         },
+//         {
+//             id: 6,
+//             brand: "Nike",
+//             availability: "Limited Edition",
+//             price: "1200",
+//             img: "../assets/imgs/fg"
+//         },
+//         {
+//             id: 7,
+//             brand: "Nike",
+//             availability: "in stock",
+//             price: "1200",
+//             img: "../assets/imgs/fg"
+//         },
+//     ]
+
+//     let wishlistItem = cartItems.map((cartItem) => {
+        
+//     })
+// }

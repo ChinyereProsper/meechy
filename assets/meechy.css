@@ -1074,6 +1074,7 @@ nav .menu {
     }
 }
 
+
 .footer .rights .product-icons {
     display: flex;
     align-items: center;
@@ -2570,14 +2571,14 @@ nav .menu {
     gap: 30px;
 }
 
-@media(max-width: 350px){
+@media(max-width: 350px) {
     .about-section .why-buy-from-us .wrapper .sourcing {
         display: flex;
         flex-direction: column;
         align-items: start;
         gap: 10px;
     }
-    
+
 }
 
 .about-section .why-buy-from-us .wrapper .sourcing p {
@@ -2642,11 +2643,11 @@ nav .menu {
 
 @media(max-width: 350px) {
     .about-section .the-future .btns {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-}
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
 
 }
 
@@ -2674,4 +2675,193 @@ nav .menu {
     background-color: transparent;
     color: var(--black-col);
     border: 2px solid var(--side-col);
+}
+
+
+/* ================= ContactUs ===============
+============================================== */
+.support-center-wrapper .support-center {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 10rem;
+}
+
+.support-center-wrapper .support-center,
+.support-center-wrapper .support-center .search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.support-center-wrapper .popular,
+.support-center .title p {
+    color: var(--btns-color);
+    font-size: 15px;
+}
+
+.support-center-wrapper .support-center .how-can-we-help {
+    font-size: 20px
+}
+
+
+.support-center-wrapper form .search .search-items {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 5px;
+    background-color: var(--main-col);
+    border-radius: 10px;
+}
+
+.support-center-wrapper form .search .search-items input {
+    width: 450px;
+    padding:  10px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: var(--main-col);
+}
+
+.support-center-wrapper form .search .search-items ion-icon {
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.support-center-wrapper .popular {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 15px;
+}
+
+.support-center-wrapper .popular a {
+    text-decoration: none;
+    color: var(--side-col);
+}
+
+.support-center-wrapper .popular a:hover {
+    text-decoration: underline;
+}
+
+.support-center-wrapper .product-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 3rem 10rem;
+}
+
+.support-center-wrapper .product-info .contat-us-image {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.support-center-wrapper .product-info .contat-us-image img {
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.support-center-wrapper .shipping-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.support-center-wrapper .shipping-content .shipping-header {
+    background-color: var(--main-col);
+    border-radius: 10px;
+
+}
+
+.support-center-wrapper .shipping-content .shipping-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 20px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.support-center-wrapper .shipping-content .dropdown-content {
+    display: none;
+    flex-direction: column;
+    padding: 0 25px 20px;
+
+}
+
+.support-center-wrapper .shipping-content .dropdown-content.show {
+    display: flex;
+}
+
+.support-center-wrapper .shipping-content .shipping-section ion-icon {
+    color: var(--dark-green);
+}
+
+.support-center-wrapper .shipping-content .shipping,
+span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.support-center-wrapper .brand {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 10rem;
+}
+
+.support-center-wrapper .brand-promise {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main-col);
+    padding: 4rem;
+    border-radius: 10px;
+}
+
+.support-center-wrapper .brand-promise .client-care {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 10px;
+    color: var(--btns-color);
+}
+
+.support-center-wrapper .brand-promise .client-care h6 {
+    font-size: 30px;
+    color: var(--black-col);
+}
+
+.support-center-wrapper .brand-promise .contact-support {
+    display: flex;
+    gap: 10px;
+}
+
+.support-center-wrapper .brand-promise .contact-support button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--dark-green);
+    color: var(--default-col);
+    font-weight: 600;
+}
+
+.support-center-wrapper .brand-promise .contact-support button:hover {
+    background-color: var(--side-col);
+    cursor: pointer;
+}
+
+.support-center-wrapper .brand-promise .contact-support button:last-child {
+    background-color: var(--hover-col);
+    border: 2px solid var(--dark-green);
+    color: var(--dark-green);
+}
+
+.support-center-wrapper .brand-promise .contact-support button:last-child:hover {
+    background-color: var(--default-col);
 }

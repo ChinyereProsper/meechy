@@ -2404,7 +2404,6 @@ nav .menu {
     }
 }
 
-
 .about-section .process-card .title {
     font-size: 15px;
 }
@@ -2686,6 +2685,24 @@ nav .menu {
     padding: 3rem 10rem;
 }
 
+@media (max-width: 1200px) {
+    .support-center-wrapper .support-center {
+        padding: 3rem 5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .support-center-wrapper .support-center {
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .support-center-wrapper .support-center {
+        padding: 3rem 1rem;
+    }
+}
+
 .support-center-wrapper .support-center,
 .support-center-wrapper .support-center .search {
     display: flex;
@@ -2702,7 +2719,14 @@ nav .menu {
 }
 
 .support-center-wrapper .support-center .how-can-we-help {
-    font-size: 20px
+    font-size: 20px;
+}
+
+@media (max-width: 600px) {
+    .support-center-wrapper .support-center .how-can-we-help h1 {
+        font-size: 25px;
+    }
+
 }
 
 
@@ -2717,12 +2741,26 @@ nav .menu {
 
 .support-center-wrapper form .search .search-items input {
     width: 450px;
-    padding:  10px;
+    padding: 10px;
     font-size: 15px;
     border: none;
     outline: none;
     background-color: var(--main-col);
 }
+
+@media (max-width:600px) {
+    .support-center-wrapper form .search .search-items input {
+        width: 250px;
+        padding: 10px;
+    }
+}
+
+/* @media (max-width:400px) {
+    .support-center-wrapper form .search .search-items input {
+        width: 350px;
+        padding: 10px;
+    }
+} */
 
 .support-center-wrapper form .search .search-items ion-icon {
     padding: 10px;
@@ -2735,6 +2773,19 @@ nav .menu {
     justify-content: center;
     width: 100%;
     gap: 15px;
+}
+
+@media (max-width: 600px) {
+    .support-center-wrapper .popular {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .support-center-wrapper .popular a {
+        width: 100%;
+    }
 }
 
 .support-center-wrapper .popular a {
@@ -2751,6 +2802,34 @@ nav .menu {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 3rem 10rem;
+}
+
+
+@media (max-width: 1200px) {
+    .support-center-wrapper .product-info {
+        padding: 3rem 5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .support-center-wrapper .product-info {
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .support-center-wrapper .product-info {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        padding: 0rem 3rem;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .support-center-wrapper .product-info {
+        padding: 0rem 1rem;
+    }
 }
 
 .support-center-wrapper .product-info .contat-us-image {
@@ -2787,6 +2866,13 @@ nav .menu {
 
 }
 
+@media (max-width: 600px) {
+    .support-center-wrapper .shipping-content .shipping-section p {
+        font-size: 17px;
+    }
+}
+
+
 .support-center-wrapper .shipping-content .dropdown-content {
     display: none;
     flex-direction: column;
@@ -2815,6 +2901,24 @@ span {
     padding: 3rem 10rem;
 }
 
+@media (max-width:1200px) {
+    .support-center-wrapper .brand {
+        padding: 3rem 5rem;
+    }
+}
+
+@media (max-width:900px) {
+    .support-center-wrapper .brand {
+        padding: 3rem;
+    }
+}
+
+@media (max-width:600px) {
+    .support-center-wrapper .brand {
+        padding: 3rem 1rem;
+    }
+}
+
 .support-center-wrapper .brand-promise {
     display: flex;
     justify-content: space-between;
@@ -2822,6 +2926,16 @@ span {
     background-color: var(--main-col);
     padding: 4rem;
     border-radius: 10px;
+}
+
+@media (max-width:900px) {
+    .support-center-wrapper .brand-promise {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 2rem;
+        gap: 20px;
+    }
 }
 
 .support-center-wrapper .brand-promise .client-care {
@@ -2832,14 +2946,34 @@ span {
     color: var(--btns-color);
 }
 
+@media (max-width:900px) {
+    .support-center-wrapper .brand-promise .client-care {
+        width: 100%;
+    }
+}
+
 .support-center-wrapper .brand-promise .client-care h6 {
     font-size: 30px;
     color: var(--black-col);
 }
 
+@media (max-width:600px) {
+    .support-center-wrapper .brand-promise .client-care h6 {
+        font-size: 25px;
+        color: var(--black-col);
+    }
+}
+
 .support-center-wrapper .brand-promise .contact-support {
     display: flex;
     gap: 10px;
+}
+
+@media (max-width:350px) {
+    .support-center-wrapper .brand-promise .contact-support {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .support-center-wrapper .brand-promise .contact-support button {
@@ -2849,6 +2983,12 @@ span {
     background-color: var(--dark-green);
     color: var(--default-col);
     font-weight: 600;
+}
+
+@media (max-width:370px) {
+    .support-center-wrapper .brand-promise .contact-support button {
+        padding: 10px 20px;
+    }
 }
 
 .support-center-wrapper .brand-promise .contact-support button:hover {
@@ -2864,4 +3004,64 @@ span {
 
 .support-center-wrapper .brand-promise .contact-support button:last-child:hover {
     background-color: var(--default-col);
+}
+
+.general-container .auth-container {
+    display: flex;
+    gap: 50px;
+    padding: 3rem 10rem;
+}
+
+.auth-container .form-image {
+    width: 500px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.auth-container .form-image img {
+    width: 100%;
+}
+
+.auth-container .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    gap: 20px;
+
+}
+
+.auth-container .form-wrapper .switcher {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--hover-col);
+    border-radius: 5px;
+    padding: 3px;
+    gap: 20px;
+}
+
+.auth-container .form-wrapper .switcher .login-title {
+    display: flex;
+    justify-content: center;
+    padding: 5px 25px;
+    border-radius: 5px;
+    background-color: var(--default-col);
+    width: 100%;
+}
+
+.auth-container .form-wrapper .switcher .reg-title {
+    display: flex;
+    justify-content: center;
+    padding: 5px 25px;
+    border-radius: 5px;
+    width: 100%;
+}
+.auth-container .form-wrapper .switcher .reg-title:hover, .reg-title:hover{
+    cursor: pointer;
+}
+
+.auth-container form{
+    display: block;
+    justify-content: center;
+    align-items: center;
 }

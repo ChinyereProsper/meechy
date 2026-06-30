@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/meechy.css">
+    <title>Document</title>
+    <!-- ============ FONTS =========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Audiowide&family=Outfit:wght@100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- ==========ION ICONS ========== -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <div class="general-container">
+        <div class="nav-bar">
+            <div class="brand-title">
+                <p>Meechy</p>
+            </div>
+            <div class="back">
+                <button><ion-icon name="chevron-backward-outline"></ion-icon> Back</button>
+            </div>
+        </div>
+        <div class="auth-container">
+            <div class="form-image">
+                <img src="/assets/imgs/rty.jpg" alt="">
+            </div>
+            <div class="form-wrapper">
+                <div class="switcher">
+                    <div class="login-title">
+                        <p>Login</p>
+                    </div>
+                    <div class="reg-title">
+                        <p>Register</p>
+                    </div>
+                </div>
+                <form id="loginForm">
+                    <div class="welcome">
+                        <span>Welcome Back</span>
+                        <span>Please enter your details to access your account</span>
+                    </div>
+                    <div class="your-email">
+                        <label for="">EMAIL ADDRESS</label>
+                        <input type="text" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="your-password">
+                        <div class="forgot">
+                            <label for="">PASSWORD</label>
+                            <label for=""><span>FORGOT?</span></label>
+                        </div>
+                        <input type="password" required>
+
+                    </div>
+                    <button>SIGN IN <ion-icon name="chevron-forward-outline"></ion-icon></button>
+                </form>
+                <div class="signin-options">
+                    <div class="">signin-title</div>
+                    <div class="options">
+                        <div class="google">
+                            <ion-icon name="logo-google"></ion-icon>
+                            <p>GOOGLE</p>
+                        </div>
+                        <div class="google">
+                            <ion-icon name="logo-apple"></ion-icon>
+                            <p>APPLE</p>
+                        </div>
+                    </div>
+                    <p>By continuing, you agree to LUXE's <span>Terms of Service and Privacy Policy.</span></p>
+                </div>
+
+                <!-- <form id="registerForm" class="hidden">
+                <input type="text">
+            </form> -->
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="/meechy.js"></script>
+
+</html>

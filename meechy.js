@@ -1,5 +1,5 @@
 let productContainer = document.getElementById("product");
-let productContent = document.getElementById("product-list");
+// let productContent = document.getElementById("product-list");
 
 function displayProducts() {
 
@@ -85,7 +85,7 @@ function displayProducts() {
                     <img src="${product.img}" alt="${product.title}" class="product-img">
                 </div>
                 <div class="price-content">
-                    <p>${product.title}</>
+                    <p>${product.title}</p>
                     <p>${product.price}</p>
                 </div>
                 <span>${product.wear}</span>
@@ -94,6 +94,7 @@ function displayProducts() {
         `;
     });
 
+    if (!productContainer) return;
     productContainer.innerHTML = mappedProducts.join("");
 }
 
@@ -141,9 +142,13 @@ let outfits = [
 
 
 function displayOutfits() {
+    if (!view) return;
+
     outfits.forEach(outfit => {
-        view.innerHTML += `<img src= "${outfit.img}" onclick="changeImage('${outfit.img}')">`;
-    })
+        view.innerHTML += `
+            <img src="${outfit.img}" onclick="changeImage('${outfit.img}')">
+        `;
+    });
 }
 function changeImage(img) {
     var previewImg = document.getElementById("previewImg");
@@ -210,6 +215,17 @@ displayOutfits();
 //     ]
 
 //     let wishlistItem = cartItems.map((cartItem) => {
-        
+
 //     })
 // }
+
+let shippingSections = document.querySelectorAll(".shipping-section");
+let dropdownContainers = document.querySelectorAll(".dropdown-content");
+
+shippingSections.forEach(section => {
+    section.addEventListener("click", () => {
+        dropdownContainers.forEach(dropdownContainer => {
+            dropdownContainer.classList.toggle("show");
+        });
+    });
+});

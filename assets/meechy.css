@@ -3006,15 +3006,35 @@ span {
     background-color: var(--default-col);
 }
 
+
+/* ================= Login Form ======================= */
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 10rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.nav-bar .back p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: var(--hover-col);
+    cursor: pointer;
+}
+
 .general-container .auth-container {
     display: flex;
     gap: 50px;
-    padding: 3rem 10rem;
+    justify-content: center;
+    padding: 1rem 10rem;
 }
 
 .auth-container .form-image {
     width: 500px;
-    height: 100vh;
+    height: 80vh;
     overflow: hidden;
 }
 
@@ -3022,25 +3042,45 @@ span {
     width: 100%;
 }
 
+.auth-container .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .auth-container .form-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 30%;
     gap: 20px;
-
 }
 
-.auth-container .form-wrapper .switcher {
+.auth-container .auth-form {
+    display: none;
+}
+
+.auth-container .auth-form.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.auth-container .form-wrapper.show {
+    display: none;
+}
+
+.auth-container .switcher {
     display: flex;
     justify-content: space-between;
     background-color: var(--hover-col);
     border-radius: 5px;
     padding: 3px;
     gap: 20px;
+    width: 100%;
 }
 
-.auth-container .form-wrapper .switcher .login-title {
+.auth-container .switcher .login-title {
     display: flex;
     justify-content: center;
     padding: 5px 25px;
@@ -3049,19 +3089,121 @@ span {
     width: 100%;
 }
 
-.auth-container .form-wrapper .switcher .reg-title {
+.auth-container .switcher .reg-title {
     display: flex;
     justify-content: center;
     padding: 5px 25px;
     border-radius: 5px;
     width: 100%;
 }
-.auth-container .form-wrapper .switcher .reg-title:hover, .reg-title:hover{
+
+.auth-container .switcher .reg-title:hover,
+.reg-title:hover {
     cursor: pointer;
 }
 
-.auth-container form{
-    display: block;
-    justify-content: center;
+.auth-container form .form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    color: var(--btns-color);
+}
+
+.auth-container form .welcome span p {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--black-col);
+}
+
+.auth-container form label {
+    font-size: 15px;
+}
+
+.auth-container form .your-email,
+.your-password {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container form .your-email input,
+.your-password input {
+    padding: 10px;
+    background-color: var(--main-col);
+    border: none;
+    box-shadow: 0 0 1px rgb(178, 178, 178);
+}
+
+.auth-container form .forgot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.auth-container form button {
+    display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: var(--dark-green);
+    color: var(--default-col);
+    border: none;
+}
+
+.auth-container form button:hover {
+    cursor: pointer;
+    background-color: var(--side-col);
+}
+
+.signin-title {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    gap: 15px;
+    font-size: 13px;
+    color: var(--btns-color);
+}
+
+.signin-title::before,
+.signin-title::after {
+    content: "";
+    width: 100px;
+    height: 1px;
+    background: var(--hover-col);
+}
+
+.signin-options .signin-title p {
+    color: var(--btns-color);
+    font-size: 15px;
+}
+
+.form-wrapper .signin-options .options {
+    display: flex;
+    gap: 20px;
+}
+
+.form-wrapper .signin-options .options .google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid var(--btns-color);
+    width: 100%;
+    gap: 10px;
+}
+
+.form-wrapper .signin-options .options .google:hover {
+    cursor: pointer;
+    background-color: var(--hover-col);
+    border: none;
+}
+
+.form-wrapper .signin-options .terms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.form-wrapper .signin-options .terms span {
+    color: var(--side-col);
 }

@@ -229,3 +229,22 @@ shippingSections.forEach(section => {
         });
     });
 });
+
+// let login = document.getElementById("showLogin");
+// let register = document.getElementById("showRegister");
+// let showFormWrapper = document.getElementById("showFormWrapper");
+// let showAuthForm = document.getElementById("showAuthForm");
+
+// register.addEventListener("click", function(){
+//     alert("hello")
+// })
+
+// register.addEventListener("click", (e) => {
+//     alert("heelo");
+//     e.preventDefault();
+
+//     showAuthForm.classList.add("show");
+// });
+
+
+

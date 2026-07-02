@@ -20,68 +20,180 @@
 <body>
     <div class="general-container">
         <div class="nav-bar">
-            <div class="brand-title">
-                <p>Meechy</p>
-            </div>
             <div class="back">
-                <button><ion-icon name="chevron-backward-outline"></ion-icon> Back</button>
+                <p><ion-icon name="chevron-back-outline"></ion-icon> Back</p>
             </div>
         </div>
+
+        <!-- ================= Login Form =======================  -->
+
         <div class="auth-container">
             <div class="form-image">
                 <img src="/assets/imgs/rty.jpg" alt="">
             </div>
-            <div class="form-wrapper">
-                <div class="switcher">
-                    <div class="login-title">
-                        <p>Login</p>
+            <div class="form-container">
+                <div class="form-wrapper" >
+                    <div class="switcher">
+                        <div class="login-title" id="showLoginBtn">
+                            <p>Login</p>
+                        </div>
+                        <div class="reg-title" id="showRegisterBtn">
+                            <p>Register</p>
+                        </div>
                     </div>
-                    <div class="reg-title">
-                        <p>Register</p>
+                    <form id="loginForm" id="showFormWrapper">
+                        <div class="form-content">
+                            <div class="welcome">
+                                <span>
+                                    <p>Welcome back</p>
+                                </span>
+                                <span>Please enter your details to access your account</span>
+                            </div>
+                            <div class="form-wrapper">
+                                <div class="your-email">
+                                    <label>EMAIL ADDRESS</label>
+                                    <input type="text" name="email" placeholder="Enter your email" required>
+                                </div>
+                                <div class="your-password">
+                                    <div class="forgot">
+                                        <label for="">PASSWORD</label>
+                                        <label for=""><span>FORGOT?</span></label>
+                                    </div>
+                                    <input type="password" placeholder="Enter your password" required>
+                                </div>
+                                <button>SIGN IN <ion-icon name="chevron-forward-outline"></ion-icon></button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="signin-options">
+                        <div class="signin-title">OR CONTINUE WITH</div>
+                        <div class="options">
+                            <div class="google">
+                                <ion-icon name="logo-google"></ion-icon>
+                                <p>GOOGLE</p>
+                            </div>
+                            <div class="google">
+                                <ion-icon name="logo-apple"></ion-icon>
+                                <p>APPLE</p>
+                            </div>
+                        </div>
+                        <div class="terms">
+                            <p>By continuing, you agree to Meechy <span>Terms of Service and Privacy Policy.</span></p>
+                        </div>
                     </div>
                 </div>
-                <form id="loginForm">
-                    <div class="welcome">
-                        <span>Welcome Back</span>
-                        <span>Please enter your details to access your account</span>
-                    </div>
-                    <div class="your-email">
-                        <label for="">EMAIL ADDRESS</label>
-                        <input type="text" name="email" placeholder="Enter your email" required>
-                    </div>
-                    <div class="your-password">
-                        <div class="forgot">
-                            <label for="">PASSWORD</label>
-                            <label for=""><span>FORGOT?</span></label>
+                <div class="auth-form" id="showAuthForm">
+                    <form id="loginForm">
+                        <div class="form-content">
+                            <div class="welcome">
+                                <span>
+                                    <p>Welcome</p>
+                                </span>
+                                <span>Please enter your details to access your account</span>
+                            </div>
+                            <div class="form-wrapper">
+                                <div class="your-email">
+                                    <label>EMAIL ADDRESS</label>
+                                    <input type="text" name="email" placeholder="Enter your email" required>
+                                </div>
+                                <div class="your-password">
+                                    <div class="forgot">
+                                        <label for="">PASSWORD</label>
+                                        <label for=""><span>FORGOT?</span></label>
+                                    </div>
+                                    <input type="password" placeholder="Enter your password" required>
+                                </div>
+                                <button>LOGIN <ion-icon name="chevron-forward-outline"></ion-icon></button>
+                            </div>
                         </div>
-                        <input type="password" required>
-
-                    </div>
-                    <button>SIGN IN <ion-icon name="chevron-forward-outline"></ion-icon></button>
-                </form>
-                <div class="signin-options">
-                    <div class="">signin-title</div>
-                    <div class="options">
-                        <div class="google">
-                            <ion-icon name="logo-google"></ion-icon>
-                            <p>GOOGLE</p>
-                        </div>
-                        <div class="google">
-                            <ion-icon name="logo-apple"></ion-icon>
-                            <p>APPLE</p>
-                        </div>
-                    </div>
-                    <p>By continuing, you agree to LUXE's <span>Terms of Service and Privacy Policy.</span></p>
+                    </form>
                 </div>
-
-                <!-- <form id="registerForm" class="hidden">
-                <input type="text">
-            </form> -->
+            </div>
+        </div>
+        <!-- =============== Footer ============== -->
+        <div class="footer">
+            <div class="footer-wrapper">
+                <div class="brand">
+                    <div class="brand-title">
+                        <p>Meechy</p>
+                    </div>
+                    <div class="brand-content">
+                        <p>Elevated garments for the modern landscape. Technical percision meets avant-garde
+                            luxury.</p>
+                    </div>
+                    <div class="brand-icons">
+                        <ion-icon name="camera-outline"></ion-icon>
+                        <ion-icon name="globe-outline"></ion-icon>
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="collections">
+                    <div class="support">
+                        <div class="title">
+                            <p>COLLECTIONS</p>
+                        </div>
+                        <div class="status">
+                            <a href="">Shop All</a>
+                            <a href="">New Arrivals</a>
+                            <a href="">Limited Edition</a>
+                        </div>
+                    </div>
+                    <div class="support">
+                        <div class="title">
+                            <p>Assistance</p>
+                        </div>
+                        <div class="status">
+                            <a href="">Return & Exchange</a>
+                            <a href="">Shipping Policy</a>
+                            <a href="">Careers</a>
+                        </div>
+                    </div>
+                    <div class="support">
+                        <div class="title">
+                            <p>About</p>
+                        </div>
+                        <div class="status">
+                            <a href="">Our Story</a>
+                            <a href="">Sustainability</a>
+                            <a href="">Studio Visit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rights">
+                <div class="product-year">
+                    <p>
+                        <span>&copy</span> 2026 Meechy premium Commerce. All rights reserved.
+                    </p>
+                </div>
+                <div class="product-icons">
+                    <ion-icon name="earth-outline"></ion-icon>
+                    <ion-icon name="megaphone-outline"></ion-icon>
+                    <ion-icon name="logo-paypal"></ion-icon>
+                </div>
             </div>
         </div>
     </div>
 
 </body>
+
+<script>
+    let loginBtn = document.getElementById("showLoginBtn");
+    let registerBtn = document.getElementById("showRegisterBtn");
+    let showFormWrapper = document.getElementById("showFormWrapper");
+    let showAuthForm = document.getElementById("showAuthForm");
+
+    registerBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        showAuthForm.classList.add("show");
+        showFormWrapper.classList.add("show");
+    });
+
+    // loginBtn.addEventListener("click", ()=>{
+    //     showFormWrapper.classList.add
+    // })
+</script>
 <script src="/meechy.js"></script>
 
 </html>

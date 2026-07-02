@@ -1688,6 +1688,108 @@ nav .menu {
     background-color: var(--side-col);
 }
 
+/* ============================ SHOP ==============================  */
+.shop-container {
+    display: flex;
+    height: 100vh;
+    padding: 2rem 1rem;
+    background-color: var(--main-col);
+
+}
+
+.shop-container aside {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+}
+
+.shop-container aside .all-container {
+    padding-bottom: 30px;
+}
+
+.shop-container aside .item-details {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    color: var(--btns-color);
+}
+
+.shop-container .item-details ion-icon{
+    cursor: pointer;
+    color: var(--black-col);
+}
+
+.shop-container aside .category,
+aside .pricing,
+.select-color,
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop-container .category-contents p,
+.price-range-wrap .pricing p,
+.select-color p {
+    color: var(--black-col);
+    font-weight: 600;
+}
+
+.shop-container .category-contents,
+.price-range-wrap,
+.color-wrap {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid var(--hover-col);
+    padding: 10px 0;
+    gap: 10px;
+}
+
+.price-range-wrap .price-range input {
+    flex: 1;
+    width: 100%;
+}
+
+.shop-container .color-wrap .colors {
+    display: flex;
+    gap: 10px;
+}
+
+.shop-container .color-wrap .colors .color-one {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--side-col);
+    border: 2px solid transparent;
+    transition: 0.2s;
+}
+
+.shop-container .color-wrap .colors .color-one:hover {
+    border-style: double;
+    cursor: pointer;
+    border: 2px solid var(--black-col);
+    transform: scale(1.1);
+}
+
+.shop-container main{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ============================= WISHLIST ========================*/
 .wishlistWrapper {
     display: grid;
@@ -3018,15 +3120,15 @@ nav .menu {
 }
 
 @media(max-width: 900px) {
-.nav-bar {
-    padding: 1rem 5rem;
-}
+    .nav-bar {
+        padding: 1rem 5rem;
+    }
 }
 
 @media(max-width: 600px) {
-.nav-bar {
-    padding: 1rem;
-}
+    .nav-bar {
+        padding: 1rem;
+    }
 }
 
 .nav-bar .back p {
@@ -3058,6 +3160,7 @@ nav .menu {
         padding: 1rem 3rem;
     }
 }
+
 @media(max-width: 600px) {
     .general-container .auth-container {
         padding: 1rem;
@@ -3075,9 +3178,9 @@ nav .menu {
 }
 
 @media(max-width: 900px) {
-.auth-container .form-image {
-    display: none;
-}
+    .auth-container .form-image {
+        display: none;
+    }
 
 }
 
@@ -3090,10 +3193,11 @@ nav .menu {
 }
 
 @media(max-width: 500px) {
-.form-container .auth-card {
-    width: 100%;
+    .form-container .auth-card {
+        width: 100%;
+    }
 }
-}
+
 .form-container .switcher {
     display: flex;
     background: #eee;
@@ -3154,10 +3258,10 @@ nav .menu {
 }
 
 @media(max-width: 600px) {
-.signin-title {
-    gap: 10px;
-    font-size: 10px;
-}
+    .signin-title {
+        gap: 10px;
+        font-size: 10px;
+    }
 
 }
 

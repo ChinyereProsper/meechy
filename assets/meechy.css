@@ -2888,8 +2888,9 @@ nav .menu {
     color: var(--dark-green);
 }
 
+/* === I made changes here */
 .support-center-wrapper .shipping-content .shipping,
-span {
+.shipping span {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -3011,9 +3012,21 @@ span {
 
 .nav-bar {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     padding: 1rem 10rem;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+@media(max-width: 900px) {
+.nav-bar {
+    padding: 1rem 5rem;
+}
+}
+
+@media(max-width: 600px) {
+.nav-bar {
+    padding: 1rem;
+}
 }
 
 .nav-bar .back p {
@@ -3027,14 +3040,33 @@ span {
 
 .general-container .auth-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 50px;
     justify-content: center;
     padding: 1rem 10rem;
 }
 
+@media(max-width: 1200px) {
+    .general-container .auth-container {
+        padding: 1rem 5rem;
+    }
+}
+
+@media(max-width: 900px) {
+    .general-container .auth-container {
+        padding: 1rem 3rem;
+    }
+}
+@media(max-width: 600px) {
+    .general-container .auth-container {
+        padding: 1rem;
+    }
+}
+
 .auth-container .form-image {
     width: 500px;
-    height: 80vh;
+    height: 700px;
     overflow: hidden;
 }
 
@@ -3042,116 +3074,74 @@ span {
     width: 100%;
 }
 
-.auth-container .form-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.auth-container .form-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-}
-
-.auth-container .auth-form {
+@media(max-width: 900px) {
+.auth-container .form-image {
     display: none;
 }
 
-.auth-container .auth-form.show {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
 }
 
-.auth-container .form-wrapper.show {
+.form-container .auth-card {
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+    margin: auto;
+
+}
+
+@media(max-width: 500px) {
+.form-container .auth-card {
+    width: 100%;
+}
+}
+.form-container .switcher {
+    display: flex;
+    background: #eee;
+    padding: 4px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+
+}
+
+.form-container .tab {
+    flex: 1;
+    border: none;
+    background: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.form-container .tab.active {
+    background: white;
+    font-weight: bold;
+}
+
+.form-container .form {
     display: none;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.auth-container .switcher {
+.form-container .form.active {
     display: flex;
-    justify-content: space-between;
-    background-color: var(--hover-col);
-    border-radius: 5px;
-    padding: 3px;
-    gap: 20px;
-    width: 100%;
 }
 
-.auth-container .switcher .login-title {
-    display: flex;
-    justify-content: center;
-    padding: 5px 25px;
-    border-radius: 5px;
-    background-color: var(--default-col);
-    width: 100%;
-}
-
-.auth-container .switcher .reg-title {
-    display: flex;
-    justify-content: center;
-    padding: 5px 25px;
-    border-radius: 5px;
-    width: 100%;
-}
-
-.auth-container .switcher .reg-title:hover,
-.reg-title:hover {
-    cursor: pointer;
-}
-
-.auth-container form .form-content {
+.form-container input {
     display: flex;
     flex-direction: column;
-    gap: 30px;
     width: 100%;
-    color: var(--btns-color);
-}
-
-.auth-container form .welcome span p {
-    font-weight: 600;
-    font-size: 20px;
-    color: var(--black-col);
-}
-
-.auth-container form label {
-    font-size: 15px;
-}
-
-.auth-container form .your-email,
-.your-password {
-    display: flex;
-    flex-direction: column;
-}
-
-.auth-container form .your-email input,
-.your-password input {
-    padding: 10px;
-    background-color: var(--main-col);
-    border: none;
-    box-shadow: 0 0 1px rgb(178, 178, 178);
-}
-
-.auth-container form .forgot {
-    display: flex;
-    justify-content: space-between;
-}
-
-.auth-container form button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    background-color: var(--dark-green);
-    color: var(--default-col);
+    padding: 12px;
+    box-shadow: 0 0px 3px rgba(64, 64, 64, 0.25);
     border: none;
 }
 
-.auth-container form button:hover {
+
+.form-container .submit-btn {
+    padding: 12px;
     cursor: pointer;
-    background-color: var(--side-col);
 }
 
 .signin-title {
@@ -3161,6 +3151,14 @@ span {
     gap: 15px;
     font-size: 13px;
     color: var(--btns-color);
+}
+
+@media(max-width: 600px) {
+.signin-title {
+    gap: 10px;
+    font-size: 10px;
+}
+
 }
 
 .signin-title::before,
@@ -3176,34 +3174,34 @@ span {
     font-size: 15px;
 }
 
-.form-wrapper .signin-options .options {
+.signin-options .options {
     display: flex;
     gap: 20px;
+    padding-bottom: 20px;
 }
 
-.form-wrapper .signin-options .options .google {
+.signin-options .options .google {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
-    border: 1px solid var(--btns-color);
+    box-shadow: 0 0px 3px rgba(64, 64, 64, 0.25);
     width: 100%;
     gap: 10px;
 }
 
-.form-wrapper .signin-options .options .google:hover {
+.signin-options .options .google:hover {
     cursor: pointer;
     background-color: var(--hover-col);
     border: none;
 }
 
-.form-wrapper .signin-options .terms {
+.signin .terms {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 20px;
 }
 
-.form-wrapper .signin-options .terms span {
+.signin-options .terms span {
     color: var(--side-col);
 }

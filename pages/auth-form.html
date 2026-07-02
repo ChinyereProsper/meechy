@@ -32,81 +32,79 @@
                 <img src="/assets/imgs/rty.jpg" alt="">
             </div>
             <div class="form-container">
-                <div class="form-wrapper" >
+                <div class="auth-card">
+
                     <div class="switcher">
-                        <div class="login-title" id="showLoginBtn">
-                            <p>Login</p>
-                        </div>
-                        <div class="reg-title" id="showRegisterBtn">
-                            <p>Register</p>
+                        <button id="loginBtn" class="tab active">Login</button>
+                        <button id="registerBtn" class="tab">Register</button>
+                    </div>
+
+                    <!-- Login -->
+                    <div id="loginForm" class="form active">
+
+                        <h2>Welcome Back</h2>
+                        <p>Please login to continue.</p>
+
+                        <input type="email" placeholder="Email">
+
+                        <input type="password" placeholder="Password">
+
+                        <button class="submit-btn">
+                            Login
+                        </button>
+                        <div class="signin-options">
+                            <div class="signin-title">OR CONTINUE WITH</div>
+                            <div class="options">
+                                <div class="google">
+                                    <ion-icon name="logo-google"></ion-icon>
+                                    <p>GOOGLE</p>
+                                </div>
+                                <div class="google">
+                                    <ion-icon name="logo-apple"></ion-icon>
+                                    <p>APPLE</p>
+                                </div>
+                            </div>
+                            <div class="terms">
+                                <p>By continuing, you agree to Meechy <span>Terms of Service and Privacy Policy.</span>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <form id="loginForm" id="showFormWrapper">
-                        <div class="form-content">
-                            <div class="welcome">
-                                <span>
-                                    <p>Welcome back</p>
-                                </span>
-                                <span>Please enter your details to access your account</span>
-                            </div>
-                            <div class="form-wrapper">
-                                <div class="your-email">
-                                    <label>EMAIL ADDRESS</label>
-                                    <input type="text" name="email" placeholder="Enter your email" required>
+
+                    <!-- Register -->
+                    <div id="registerForm" class="form">
+
+                        <h2>Create Account</h2>
+                        <p>Create your Meechy account.</p>
+
+                        <input type="text" placeholder="Full Name">
+
+                        <input type="email" placeholder="Email">
+
+                        <input type="password" placeholder="Password">
+
+                        <button class="submit-btn">
+                            Register
+                        </button>
+                        <div class="signin-options">
+                            <div class="signin-title">OR CONTINUE WITH</div>
+                            <div class="options">
+                                <div class="google">
+                                    <ion-icon name="logo-google"></ion-icon>
+                                    <p>GOOGLE</p>
                                 </div>
-                                <div class="your-password">
-                                    <div class="forgot">
-                                        <label for="">PASSWORD</label>
-                                        <label for=""><span>FORGOT?</span></label>
-                                    </div>
-                                    <input type="password" placeholder="Enter your password" required>
+                                <div class="google">
+                                    <ion-icon name="logo-apple"></ion-icon>
+                                    <p>APPLE</p>
                                 </div>
-                                <button>SIGN IN <ion-icon name="chevron-forward-outline"></ion-icon></button>
                             </div>
-                        </div>
-                    </form>
-                    <div class="signin-options">
-                        <div class="signin-title">OR CONTINUE WITH</div>
-                        <div class="options">
-                            <div class="google">
-                                <ion-icon name="logo-google"></ion-icon>
-                                <p>GOOGLE</p>
+                            <div class="terms">
+                                <p>By continuing, you agree to Meechy <span>Terms of Service and Privacy Policy.</span>
+                                </p>
                             </div>
-                            <div class="google">
-                                <ion-icon name="logo-apple"></ion-icon>
-                                <p>APPLE</p>
-                            </div>
-                        </div>
-                        <div class="terms">
-                            <p>By continuing, you agree to Meechy <span>Terms of Service and Privacy Policy.</span></p>
                         </div>
                     </div>
-                </div>
-                <div class="auth-form" id="showAuthForm">
-                    <form id="loginForm">
-                        <div class="form-content">
-                            <div class="welcome">
-                                <span>
-                                    <p>Welcome</p>
-                                </span>
-                                <span>Please enter your details to access your account</span>
-                            </div>
-                            <div class="form-wrapper">
-                                <div class="your-email">
-                                    <label>EMAIL ADDRESS</label>
-                                    <input type="text" name="email" placeholder="Enter your email" required>
-                                </div>
-                                <div class="your-password">
-                                    <div class="forgot">
-                                        <label for="">PASSWORD</label>
-                                        <label for=""><span>FORGOT?</span></label>
-                                    </div>
-                                    <input type="password" placeholder="Enter your password" required>
-                                </div>
-                                <button>LOGIN <ion-icon name="chevron-forward-outline"></ion-icon></button>
-                            </div>
-                        </div>
-                    </form>
+
                 </div>
             </div>
         </div>
@@ -178,21 +176,32 @@
 </body>
 
 <script>
-    let loginBtn = document.getElementById("showLoginBtn");
-    let registerBtn = document.getElementById("showRegisterBtn");
-    let showFormWrapper = document.getElementById("showFormWrapper");
-    let showAuthForm = document.getElementById("showAuthForm");
 
-    registerBtn.addEventListener("click", (e) => {
-        e.preventDefault();
+    const loginBtn = document.getElementById("loginBtn");
+    const registerBtn = document.getElementById("registerBtn");
 
-        showAuthForm.classList.add("show");
-        showFormWrapper.classList.add("show");
+    const loginForm = document.getElementById("loginForm");
+    const registerForm = document.getElementById("registerForm");
+
+    loginBtn.addEventListener("click", () => {
+
+        loginForm.classList.add("active");
+        registerForm.classList.remove("active");
+
+        loginBtn.classList.add("active");
+        registerBtn.classList.remove("active");
+
     });
 
-    // loginBtn.addEventListener("click", ()=>{
-    //     showFormWrapper.classList.add
-    // })
+    registerBtn.addEventListener("click", () => {
+
+        registerForm.classList.add("active");
+        loginForm.classList.remove("active");
+
+        registerBtn.classList.add("active");
+        loginBtn.classList.remove("active");
+
+    });
 </script>
 <script src="/meechy.js"></script>
 

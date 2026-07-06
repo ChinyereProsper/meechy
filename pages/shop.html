@@ -28,8 +28,8 @@
                 </div>
                 <div class="nav-about">
                     <ul>
-                        <li><a href="">Shop</a></li>
-                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="/pages/shop.html">Shop</a></li>
+                        <li><a href="./wishlist.html">Wishlist</a></li>
                         <li><a href="/pages/about.html">About</a></li>
                         <li><a href="/pages/contactUs.html">Contact</a></li>
                     </ul>
@@ -65,7 +65,7 @@
                 </div>
             </div>
             <ul>
-                <li><a href="">Shop</a></li>
+                <li><a href="#">Shop</a></li>
                 <li><a href="./wishlist.html">Wishlist</a></li>
                 <li><a href="/pages/about.html">About</a></li>
                 <li><a href="/pages/contactUs.html">Contact</a></li>
@@ -73,83 +73,88 @@
         </div>
 
         <!-- ====================== SHOP ======================= -->
-        <div class="shop-container">
-            <aside>
-                <div class="all-container">
-                    <h1>All Collections</h1>
-                    <p>Showing 24 of 145 items</p>
-                </div>
-                <div class="item-details">
-                    <div class="category-contents">
-                        <div class="category">
-                            <div class="title">
-                                <p>CATEGORY</p>
-                            </div>
-                            <div class="category-icon"><ion-icon name="remove-outline"></ion-icon></div>
-                        </div>
-                        <div class="outfit-type">
-                            <div class="check-list">
-                                <input type="checkbox">
-                                <label for="">Outwear (12)</label>
-                            </div>
-                            <div class="check-list">
-                                <input type="checkbox">
-                                <label for="">Essentials (48)</label>
-                            </div>
-                            <div class="check-list">
-                                <input type="checkbox">
-                                <label for="">Footwear (21)</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="price-range-wrap">
-                        <div class="pricing">
-                            <div class="price-title">
-                                <p>PRICE RANGE</p>
-                            </div>
-                            <div class="range-icon">
-                                <ion-icon name="remove-outline"></ion-icon>
-                            </div>
-                        </div>
-
-                        <div class="price-range">
-                            <input type="range">
-                            <div class="price">
-                                <p>$0</p>
-                                <p>$2,500</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="color-wrap">
-                        <div class="select-color">
-                            <div class="color-title">
-                                <p>COLOR</p>
-                            </div>
-                            <div class="add">
-                                <ion-icon name="add-outline"></ion-icon>
-                            </div>
-                        </div>
-                        <div class="colors">
-                            <div class="color-one"></div>
-                            <div class="color-one"></div>
-                            <div class="color-one"></div>
-                            <div class="color-one"></div>
-                        </div>
+        <div class="store-wrapper">
+            <div class="collection-header">
+                <div class="header-contents">
+                    <div class="all-container">
+                        <h1>All Collections</h1>
+                        <p>Showing 24 of 145 items</p>
                     </div>
                 </div>
-            </aside>
-            <main>
-                <div class="main-wrapper">
-                    <div class="sort-content">
-                        <div class="sort-title">
-                            <p>Sort by:</p>
+                <div class="sort-content">
+                    <div class="sort-title">
+                        <p>Sort by:</p>
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </div>
+                    <!-- <div class="sort-icon">
+                    </div> -->
+                </div>
+            </div>
+            <div class="main-container">
+                <aside>
+                    <div class="item-details">
+                        <div class="category-contents">
+                            <div class="category">
+                                <div class="title">
+                                    <p>CATEGORY</p>
+                                </div>
+                                <div class="category-icon"><ion-icon name="remove-outline"></ion-icon></div>
+                            </div>
+                            <div class="outfit-type">
+                                <div class="check-list">
+                                    <input type="checkbox">
+                                    <label for="">Outwear (12)</label>
+                                </div>
+                                <div class="check-list">
+                                    <input type="checkbox">
+                                    <label for="">Essentials (48)</label>
+                                </div>
+                                <div class="check-list">
+                                    <input type="checkbox">
+                                    <label for="">Footwear (21)</label>
+                                </div>
+                            </div>
                         </div>
-                        <div class="sort-icon">
-                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        <div class="price-range-wrap">
+                            <div class="pricing">
+                                <div class="price-title">
+                                    <p>PRICE RANGE</p>
+                                </div>
+                                <div class="range-icon">
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                </div>
+                            </div>
+
+                            <div class="price-range">
+                                <input type="range">
+                                <div class="price">
+                                    <p>$0</p>
+                                    <p>$2,500</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="color-wrap">
+                            <div class="select-color">
+                                <div class="color-title">
+                                    <p>COLOR</p>
+                                </div>
+                                <div class="add">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="colors">
+                                <div class="color-one"></div>
+                                <div class="color-one"></div>
+                                <div class="color-one"></div>
+                                <div class="color-one"></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="clothing" id="clothing">
-
+                </aside>
+                <main>
+                    <div class="main-wrapper">
+                        <div class="wear" id="clothing">
+                        </div>
                     </div>
                     <div class="caurosel">
                         <div class="preBtn">
@@ -158,14 +163,79 @@
                         <div class="page-title">
                             <p>Page 1 of 4</p>
                         </div>
-                        <div class="nextBtn">
+                        <div class="preBtn">
                             <ion-icon name="chevron-forward-outline"></ion-icon>
                         </div>
                     </div>
-
-                </div>
-            </main>
+                </main>
+            </div>
         </div>
+
+        <!-- =============== Footer ============== -->
+        <div class="footer">
+            <div class="footer-wrapper">
+                <div class="brand">
+                    <div class="brand-title">
+                        <p>Meechy</p>
+                    </div>
+                    <div class="brand-content">
+                        <p>Elevated garments for the modern landscape. Technical percision meets avant-garde
+                            luxury.</p>
+                    </div>
+                    <div class="brand-icons">
+                        <ion-icon name="camera-outline"></ion-icon>
+                        <ion-icon name="globe-outline"></ion-icon>
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="collections">
+                    <div class="support">
+                        <div class="title">
+                            <p>COLLECTIONS</p>
+                        </div>
+                        <div class="status">
+                            <a href="">Shop All</a>
+                            <a href="">New Arrivals</a>
+                            <a href="">Limited Edition</a>
+                        </div>
+                    </div>
+                    <div class="support">
+                        <div class="title">
+                            <p>Assistance</p>
+                        </div>
+                        <div class="status">
+                            <a href="">Return & Exchange</a>
+                            <a href="">Shipping Policy</a>
+                            <a href="">Careers</a>
+                        </div>
+                    </div>
+                    <div class="support">
+                        <div class="title">
+                            <p>About</p>
+                        </div>
+                        <div class="status">
+                            <a href="">Our Story</a>
+                            <a href="">Sustainability</a>
+                            <a href="">Studio Visit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rights">
+                <div class="product-year">
+                    <p>
+                        <span>&copy</span> 2026 Meechy premium Commerce. All rights reserved.
+                    </p>
+                </div>
+                <div class="product-icons">
+                    <ion-icon name="earth-outline"></ion-icon>
+                    <ion-icon name="megaphone-outline"></ion-icon>
+                    <ion-icon name="logo-paypal"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 </body>
 <script>
     let garment = document.getElementById("clothing");
@@ -173,56 +243,66 @@
     let collections = [
         {
             id: 1,
-            img: "../assets/img/iii.jpg",
+            img: "/assets/imgs/fff.jpg",
             name: "Midnight Drift",
             price: 1500,
         },
         {
             id: 2,
-            img: "../assets/img/ddf.jpg",
+            img: "../assets/imgs/aaa.jpg",
             name: "Eclipse Set",
             price: 1300,
         },
         {
             id: 3,
-            img: "../assets/img/aaa.jpg",
+            img: "../assets/imgs/aaa.jpg",
             name: "Atlas Jacket",
             price: 1700,
         },
         {
             id: 4,
-            img: "../assets/img/bbb.jpg",
+            img: "../assets/imgs/aaa.jpg",
             name: "Element Hoodie",
             price: 1440,
         },
         {
             id: 5,
-            img: "../assets/img/jjj.jpg",
-            name: "",
-            price: 1299
+            img: "../assets/imgs/aaa.jpg",
+            name: "Obsidian Tee",
+            price: 1299,
         },
         {
             id: 6,
-            img: "../assets/img/iii.jpg",
+            img: "../assets/imgs/aaa.jpg",
             name: "Obsidian Tee",
             price: 1200,
         },
         {
             id: 7,
-            img: "../assets/img/jjj.jpg",
+            img: "../assets/imgs/aaa.jpg",
             name: "Nova Jacket",
             price: 1400,
         },
     ]
 
-    let catalog = collections.map((collections) => {
+    let catalog = collections.slice(0, 5).map((collection) => {
         return `
-        <div class="">
-            
-
+        <div class="catalog-contents">
+            <div class="catalog-img">
+                <img src= "${collection.img}">
+            </div>
+            <div>
+                <div>
+                    <p>${collection.name}</p>
+                </div>
+                <div>
+                    <h3>$${collection.price}</h3>
+                </div>
+            </div>
         </div>
         `;
     })
+    garment.innerHTML = catalog.join("");
 
 </script>
 <script src="/meechy.js"></script>

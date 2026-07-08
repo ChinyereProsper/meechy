@@ -44,7 +44,7 @@ nav {
     /* background: rgba(255, 255, 255, 0.08); */
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.15); */
     box-shadow:
         0 8px 32px rgba(0, 0, 0, 0.08),
         inset 0 1px 0 rgba(255, 255, 255, 0.2);
@@ -203,7 +203,7 @@ nav .menu {
     border-radius: 5px;
     padding: 2px;
     background-color: var(--default-col);
-
+    width: 100%;
 }
 
 .buger-menu ul {
@@ -1930,32 +1930,6 @@ aside .pricing,
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ============================= WISHLIST ========================*/
 .wishlistWrapper {
     display: grid;
@@ -3474,4 +3448,159 @@ aside .pricing,
 
 .signin-options .terms span {
     color: var(--side-col);
+}
+
+
+/* ================== CHECKOUT ==================== */
+
+.checkout-container {
+    display: flex;
+    padding: 2rem 5rem;
+    background-color: var(--main-col);
+}
+
+.checkout-container .payment-system {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.checkout-container .payment-system .Shipping-wrapper {
+    padding: 20px;
+    background-color: var(--default-col);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.checkout-container .Shipping-Info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 20px;
+}
+
+.checkout-container .Shipping-Info p {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.checkout-container .Shipping-Info .step-one-icon {
+    padding: 3px 10px;
+    border-radius: 50%;
+    background-color: var(--dark-green);
+    color: var(--default-col);
+}
+
+.checkout-container .form-inputs form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.checkout-container .form-inputs form .name-input {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.checkout-container .form-inputs form label {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-container .form-inputs form input {
+    padding: 7px;
+    width: 250px;
+    font-size: 15px;
+    border: 1px solid var(--btns-color);
+}
+
+.checkout-container .form-inputs form .address-input,
+.city-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkout-container form .dual-input {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 30px;
+
+
+}
+
+.checkout-container form .postal-input select {
+    padding: 7px;
+    font-size: 15px;
+}
+
+.checkout-container form .postal-input input {
+    padding: 7px;
+    width: 200px;
+}
+
+/* --------------------
+-----------------------*/
+.checkout-container .payment-system .Shipping-method {
+    padding: 20px;
+    background-color: var(--default-col);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.checkout-container .method-Info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 20px;
+}
+
+.checkout-container .method-Info p {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.checkout-container .method-Info .step-one-icon {
+    padding: 3px 8px;
+    border: 1px solid var(--dark-green);
+    border-radius: 50%;
+    color: var(--dark-green);
+}
+
+.checkout-container .shipping-method {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: var(--default-col);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        gap: 20px;
+}
+
+.checkout-container .shipping-method .free {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 10px;
+    background-color: var(--btns-color);
+}
+
+.checkout-container .shipping-method .shipping-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkout-container .shipping-option .shipping-select {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--default-col);
+    border: 1px solid var(--btns-color);
 }

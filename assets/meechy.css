@@ -3455,8 +3455,9 @@ aside .pricing,
 
 .checkout-container {
     display: flex;
-    padding: 2rem 5rem;
+    padding: 20px 100px;
     background-color: var(--main-col);
+    gap: 100px;
 }
 
 .checkout-container .payment-system {
@@ -3466,7 +3467,7 @@ aside .pricing,
 }
 
 .checkout-container .payment-system .Shipping-wrapper {
-    padding: 20px;
+    padding: 30px;
     background-color: var(--default-col);
     box-shadow:
         0 8px 32px rgba(0, 0, 0, 0.08),
@@ -3557,7 +3558,6 @@ aside .pricing,
     display: flex;
     align-items: center;
     gap: 5px;
-    padding-bottom: 20px;
 }
 
 .checkout-container .method-Info p {
@@ -3575,12 +3575,12 @@ aside .pricing,
 .checkout-container .shipping-method {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 30px;
     background-color: var(--default-col);
     box-shadow:
         0 8px 32px rgba(0, 0, 0, 0.08),
         inset 0 1px 0 rgba(255, 255, 255, 0.2);
-        gap: 20px;
+    gap: 20px;
 }
 
 .checkout-container .shipping-method .free {
@@ -3588,7 +3588,20 @@ aside .pricing,
     justify-content: space-between;
     align-items: center;
     padding: 13px 10px;
-    background-color: var(--btns-color);
+    background-color: var(--main-col);
+    cursor: pointer;
+}
+
+.checkout-container .shipping-method .freeShop {
+    border: 2px solid var(--side-col);
+}
+
+.checkout-container .shipping-method p {
+    font-weight: 600;
+}
+
+.checkout-container .shipping-method span {
+    color: var(--btns-color);
 }
 
 .checkout-container .shipping-method .shipping-option {
@@ -3603,4 +3616,189 @@ aside .pricing,
     border-radius: 50%;
     background: var(--default-col);
     border: 1px solid var(--btns-color);
+}
+
+.checkout-container .payment-details {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: var(--default-col);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    gap: 20px;
+}
+
+.checkout-container .payment-details .payment-Info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.checkout-container .payment-details .payment-Info .step-one-icon {
+    padding: 3px 8px;
+    border: 1px solid var(--dark-green);
+    border-radius: 50%;
+    color: var(--dark-green);
+}
+
+.checkout-container .payment-details .payment-Info p {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.checkout-container .payment-details .payment-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.checkout-container .payment-details .payment-form input {
+    padding: 7px;
+    width: 250px;
+    font-size: 15px;
+    border: 1px solid var(--btns-color);
+}
+
+.checkout-container .payment-details .card-details {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 315px;
+}
+
+.checkout-container .payment-details .card-icon ion-icon {
+    font-size: 25px;
+    color: var(--btns-color);
+}
+
+.checkout-container .payment-details .card-info {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 150px;
+
+}
+
+.checkout-container .payment-details .card-details .card-num input,
+.expiry-date input {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.checkout-container .payment-details .card-info .expiry-date input {
+    width: 150px;
+}
+
+.checkout-container .divider {
+    height: 2px;
+    width: 100%;
+    background-color: var(--hover-col);
+}
+
+.checkout-container .security {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.checkout-container .security p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--btns-color);
+}
+
+/* ----------------------
+------------------------- */
+
+.checkout-container .offer-summary .offer-summary {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-container .offer-summary .offer {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: var(--default-col);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    gap: 30px;
+    width: 400px;
+}
+
+.checkout-container .offer-summary .order-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.checkout-container .offer-summary .offer .order-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.checkout-container .offer-summary .offer .order-title p {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.checkout-container .offer-summary .offer .order-summary-content {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.checkout-container .offer-summary .offer .order-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.checkout-container .offer-summary .offer span {
+    color: var(--btns-color);
+    font-size: 15px;
+}
+
+.checkout-container .offer-summary .offer p {
+    font-weight: 600;
+}
+
+.checkout-container .offer-summary .offer .quantity {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout-container .offer-summary .offer .order-preview {
+    height: 90px;
+    width: 90px;
+    overflow: hidden;
+}
+
+.checkout-container .offer-summary .offer .order-preview img {
+    width: 100%;
+}
+
+.checkout-container .apply input {
+    padding: 7px;
+    width: 150px;
+    font-size: 15px;
+    border: 1px solid var(--btns-color);
+}
+
+.checkout-container .apply button {
+    padding: 7px;
+    width: 100px;
+    font-size: 15px;
+    background-color: var(--main-col);
+    border: none;
+    cursor: pointer;
 }

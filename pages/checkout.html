@@ -94,25 +94,25 @@
                             <div class="name-input">
                                 <div class="">
                                     <label for="">First Name</label>
-                                    <input type="text" placeholder="Jasper">
+                                    <input type="text" placeholder="Jasper" required>
                                 </div>
                                 <div class="">
                                     <label for="">Last Name</label>
-                                    <input type="text" placeholder="Mitch">
+                                    <input type="text" placeholder="Mitch" required>
                                 </div>
                             </div>
                             <div class="address-input">
                                 <label for="">Address</label>
-                                <input type="text" placeholder="Colombus ohio">
+                                <input type="text" placeholder="Colombus ohio" required>
                             </div>
                             <div class="dual-input">
                                 <div class="city-input">
                                     <label for="">City</label>
-                                    <input type="text" placeholder="Ohio">
+                                    <input type="text" placeholder="Ohio" required>
                                 </div>
                                 <div class="postal-input">
                                     <label for="">Postal Code</label>
-                                    <input type="text" placeholder="10001">
+                                    <input type="text" placeholder="10001" required>
                                     <select>
                                         <option value="">Country</option>
                                         <option value="">Spain</option>
@@ -132,7 +132,7 @@
                             <p>Shipping Method</p>
                         </div>
                     </div>
-                    <div class="free">
+                    <div class="free freeShop">
                         <div class="shipping-option">
                             <div class="shipping-select">
 
@@ -142,7 +142,7 @@
                                 <span>3-5 Business Days</span>
                             </div>
                         </div>
-                        <div class="free">
+                        <div class="free-title">
                             <p>free</p>
                         </div>
                     </div>
@@ -156,14 +156,94 @@
                                 <span>Next Day Delivery</span>
                             </div>
                         </div>
-                        <div class="free">
+                        <div class="free-title">
                             <p>$25.00</p>
                         </div>
                     </div>
                 </div>
+                <div class="payment-details">
+                    <div class="payment-Info">
+                        <div class="step-one-icon">
+                            3
+                        </div>
+                        <div class="step-one">
+                            <p>Shipping Method</p>
+                        </div>
+                    </div>
+                    <div class="payment-form">
+                        <form action="">
+                            <div class="card-details">
+                                <div class="card-num">
+                                    <label for="">Card Number</label>
+                                    <input type="number" placeholder="0000 0000 0000 0000" required>
+                                </div>
+                                <div class="card-icon">
+                                    <ion-icon name="card-outline"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="card-info">
+                                <div class="expiry-date">
+                                    <label for="">Expiry Date </label>
+                                    <input type="date" placeholder="MM / YY" required>
+                                </div>
+                                <div class="cvv">
+                                    <label for="">CVV</label>
+                                    <input type="text" placeholder="123" required>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="security">
+                        <p><ion-icon name="shield-checkmark-outline"></ion-icon>Secure SSL Encryption</p>
+                        <p><ion-icon name="shield-half-outline"></ion-icon> Satisfaction Guaranteed</p>
+                    </div>
+                </div>
             </div>
             <div class="offer-summary">
-
+                <div class="offer">
+                    <div class="order-wrapper">
+                        <div class="order-title">
+                            <p>Order Summary</p>
+                        </div>
+                        <div class="order-summary">
+                            <div class="order-summary-content">
+                                <div class="order-preview">
+                                    <img src="/assets/imgs/uuu.jpg" alt="">
+                                </div>
+                                <div class="order-details">
+                                    <div class="order-summary-label">
+                                        <p>Precision Tech Shell</p>
+                                        <span>Forest Green / Large</span>
+                                    </div>
+                                    <div class="quantity">
+                                        <span>Qty: 1</span>
+                                        <p>$220.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-summary-content">
+                                <div class="order-preview">
+                                    <img src="/assets/imgs/uuu.jpg" alt="">
+                                </div>
+                                <div class="order-details">
+                                    <div class="order-summary-label">
+                                        <p>Precision Tech Shell</p>
+                                        <span>Forest Green / Large</span>
+                                    </div>
+                                    <div class="quantity">
+                                        <span>Qty: 1</span>
+                                        <p>$220.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="apply">
+                        <input type="text" required>
+                        <button>Apply</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

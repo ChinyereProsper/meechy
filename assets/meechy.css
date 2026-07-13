@@ -3455,15 +3455,17 @@ aside .pricing,
 
 .checkout-container {
     display: flex;
-    padding: 20px 100px;
+    justify-content: space-between;
+    /* gap: 50px; */
+    padding: 1rem 7rem;
     background-color: var(--main-col);
-    gap: 100px;
 }
 
 .checkout-container .payment-system {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    width: 55%;
 }
 
 .checkout-container .payment-system .Shipping-wrapper {
@@ -3493,19 +3495,14 @@ aside .pricing,
     color: var(--default-col);
 }
 
-.checkout-container .form-inputs form {
-    display: flex;
-    flex-direction: column;
+
+
+.checkout-container .form-inputs form .form-input{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 
 }
-
-.checkout-container .form-inputs form .name-input {
-    display: flex;
-    align-items: center;
-    gap: 70px;
-}
-
 .checkout-container .form-inputs form label {
     display: flex;
     flex-direction: column;
@@ -3518,27 +3515,16 @@ aside .pricing,
     border: 1px solid var(--btns-color);
 }
 
-.checkout-container .form-inputs form .address-input,
-.city-input {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.checkout-container form .dual-input {
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    gap: 30px;
-
-
-}
-
 .checkout-container form .postal-input select {
     padding: 7px;
     font-size: 15px;
 }
 
+.checkout-container form .dual-input{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 .checkout-container form .postal-input input {
     padding: 7px;
     width: 200px;
@@ -3727,13 +3713,12 @@ aside .pricing,
         0 8px 32px rgba(0, 0, 0, 0.08),
         inset 0 1px 0 rgba(255, 255, 255, 0.2);
     gap: 30px;
-    width: 400px;
 }
 
 .checkout-container .offer-summary .order-summary {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
 }
 
 .checkout-container .offer-summary .offer .order-wrapper {
@@ -3750,8 +3735,6 @@ aside .pricing,
 .checkout-container .offer-summary .offer .order-summary-content {
     display: flex;
     gap: 20px;
-    justify-content: space-between;
-    border: 1px solid #ccc;
     padding: 5px;
     border-radius: 5px;
 }
@@ -3763,18 +3746,20 @@ aside .pricing,
     gap: 10px;
 }
 
-.checkout-container .offer-summary .offer span {
+.checkout-container .offer-summary .offer .order-summary span,
+.expenses p {
     color: var(--btns-color);
     font-size: 15px;
 }
 
-.checkout-container .offer-summary .offer p {
+.checkout-container .offer-summary .offer .order-summary p {
     font-weight: 600;
 }
 
 .checkout-container .offer-summary .offer .quantity {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .checkout-container .offer-summary .offer .order-preview {
@@ -3801,4 +3786,54 @@ aside .pricing,
     background-color: var(--main-col);
     border: none;
     cursor: pointer;
+}
+
+.checkout-container .purchase-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-container .purchase-wrapper .expenses,
+.total-purchase {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.checkout-container .purchase-wrapper .expenses .subtotal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout-container .divider {
+    margin: 20px 0;
+    width: 100%;
+    height: 1px;
+}
+
+.checkout-container .total-purchase button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    padding: 15px;
+    background-color: var(--dark-green);
+    color: var(--default-col);
+    border: none;
+}
+
+.checkout-container .total-purchase button:hover {
+    cursor: pointer;
+    background-color: var(--side-col);
+}
+
+.checkout-container .total-purchase button ion-icon {
+    font-size: 20px;
+}
+
+.checkout-container .total-purchase .privacy-policy {
+    display: block;
+    align-items: center;
+    text-align: center;
+    color: var(--btns-color);
 }
